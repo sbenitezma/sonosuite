@@ -1,0 +1,46 @@
+@import 'colors';
+/*
+    fyi: modified behavior of transition
+*/
+.page-enter,
+
+/* Makes page disappear immediately */
+
+.page-leave-active {
+  opacity: 0;
+}
+
+
+/* eases in a bit smoother */
+
+.page-enter-active {
+  transition: opacity .3s ease-in;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/*
+  Globals
+*/
+
+body {
+  margin: 0;
+  background: $menu;
+  color: $typography;
+  font: 14px/27px 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+  color: $typography;
+  &:hover, &:active {
+    color: $main-color;
+  }
+}
+.application {
+  font: 14px/27px 'Open Sans';
+}
+@import 'menu';
+@import 'content';
+@import 'topbar';
+

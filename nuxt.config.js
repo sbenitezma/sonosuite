@@ -29,20 +29,28 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#ff8c1d' },
 
   /*
   ** Global CSS
   */
   css: [
-    '~/assets/style/app.styl'
+    '~/assets/style/app.styl',
+    '@assets/stylesheets/main.scss'
+    // Debugging files
+    // 'tachyons/css/tachyons.min.css',
+    // 'tachyons-debug/css/tachyons-debug.min.css',
   ],
-
+  // router: {
+  //   middleware: 'i18n'
+  // },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    '@/plugins/filters',
+    '@/plugins/i18n.js'
   ],
 
   /*
@@ -56,18 +64,25 @@ module.exports = {
   */
   build: {
     transpile: ['vuetify/lib'],
+    vendor: ['axios', 'vue-i18n'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
       stylus: {
         import: ["~assets/style/variables.styl"]
       }
     },
-    
-    /*
-    ** You can extend webpack config here
-    */
+    /**
+     * Run ESLint on save
+     */
     extend(config, ctx) {
-      
+      if (ctx.dev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
     }
   }
 }
