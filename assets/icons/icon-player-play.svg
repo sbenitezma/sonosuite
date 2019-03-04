@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z M23.8606452,18.245098 L14.5058065,12.0544716 C14.4067742,11.9891605 14.2783871,11.9823508 14.1725806,12.0352807 C14.0664516,12.0888296 14,12.1940703 14,12.3092159 L14,24.6904687 C14,24.8056143 14.0664516,24.9111645 14.1725806,24.9647134 C14.2196774,24.9882378 14.2712903,25 14.3225806,25 C14.3867742,25 14.4506452,24.9814281 14.5058065,24.945213 L23.8606452,18.7545866 C23.9480645,18.6967042 24,18.6016781 24,18.4998423 C24,18.3980065 23.9477419,18.3029804 23.8606452,18.245098 Z" id="path-1"></path>
+    </defs>
+    <g id="test-frontend" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-album-page" transform="translate(-783.000000, -1610.000000)">
+            <g id="player-color" transform="translate(0.000000, 1601.000000)">
+                <g id="player">
+                    <g id="player-navigation" transform="translate(744.000000, 9.000000)">
+                        <g id="play-btn" transform="translate(39.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

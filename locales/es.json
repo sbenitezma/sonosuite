@@ -1,0 +1,15 @@
+{
+  "menu": {
+    "catalog": "Catálogo",
+    "financials": "Finanzas",
+    "Data": "Datos"
+  },
+  "home": {
+    "title": "Bienvenidos",
+    "introduction": "Intro en Español."
+  },
+  "about": {
+    "title": "Acerca de",
+    "introduction": "Pagina informativa."
+  }
+}
