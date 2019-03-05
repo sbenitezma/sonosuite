@@ -8,7 +8,7 @@
       class="mb-3 mt-3"
     >
       <v-list-tile-avatar class="mr-4 my-2">
-        <v-badge color="orange darken-2" :overlap="true">
+        <v-badge color="orange darken-2" class="highlight" :overlap="true">
           <template v-if="item.highlight" v-slot:badge>
             <v-icon dark small>star</v-icon>
           </template>

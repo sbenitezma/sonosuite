@@ -3,8 +3,6 @@
 */
 @import 'menu';
 @import 'content';
-@import 'topbar';
-@import 'colors';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 /* Makes page disappear immediately */
@@ -50,17 +48,6 @@
   font: 14px 'Open Sans';
   line-height: 19.5px;
 }
-/* Navigation color and fonts */
-.navigation-font{
-  font: 16px 'Open Sans Semibold'
-}
-.v-navigation-drawer > .v-list .v-list__tile--active .v-list__tile__title{
-  color: darkorange !important;
-}
-.navigation-color{
-  color: darkorange;
-}
-
 /* Music Navigation component */
 .song-title{
   font: 13px 'Open Sans Semibold';
@@ -69,17 +56,4 @@
 .song-text{
   font: 13px 'Open Sans';
   line-height: 19.5px;
-}
-/* Rotate icon on active song list */
-.playerSong {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-/* Flip cover album image */
-.albumCover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }

@@ -1,11 +1,11 @@
 <template>
-  <v-container grid-list-md>
+  <v-container grid-list-md class="py-0">
     <v-layout row wrap>
       <v-flex md4 xs12 class="mb-4">
         <v-img
           class="albumCover"
-          max-width="400px"
-          min-width="300px"
+          max-width="450px"
+          min-width="350px"
           :src="require(`~/assets/images/${catalog.album.navCover}`)"
         />
       </v-flex>

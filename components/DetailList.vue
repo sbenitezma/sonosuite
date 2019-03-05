@@ -1,10 +1,10 @@
 <template>
-  <v-card class="px-3">
-    <v-card-text>
+  <v-card class="px-3 py-0">
+    <v-card-text class="pt-2">
       <v-flex xs12 class="mt-4">
         <h3 class="box-section-title">Details</h3>
       </v-flex>
-      <v-flex xs12 class="mt-3"
+      <v-flex xs12 class="mt-2"
         v-for="item in items"
         :key="item.name"
         @click=""

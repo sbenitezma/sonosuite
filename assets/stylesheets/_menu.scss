@@ -1,52 +1,11 @@
-///*
-//  Menu
-//*/
-//
-//nav#slide-menu {
-//  display: flex;
-//  flex-direction: column;
-//  position: fixed;
-//  top: 0;
-//  left: -100px;
-//  bottom: 0;
-//  float: left;
-//  width: 100%;
-//  max-width: 284px;
-//  height: 100%;
-//  -moz-transition: all 300ms;
-//  -webkit-transition: all 300ms;
-//  transition: all 300ms;
-//  img {
-//    width: 80%;
-//    padding: 0 10%;
-//  }
-//  ul {
-//    padding: 0 10%;
-//    li {
-//      margin-bottom: 8px;
-//      font-size: 20px;
-//      font-weight: 500;
-//      svg {
-//        display: inline-block;
-//        padding-right: 3%;
-//      }
-//      a {
-//        vertical-align: top;
-//      }
-//    }
-//  }
-//  .footer-logo {
-//    align-self: flex-end;
-//    margin-top: auto;
-//    padding-bottom: 16px;
-//  }
-//}
-//
-//#main.menu-active nav#slide-menu {
-//  left: 0px;
-//}
-//
-//#main.menu-active nav#slide-menu ul {
-//  left: 0px;
-//  opacity: 1;
-//}
+
+/* Navigation color and fonts */
+.navigation-font{
+  font: 16px 'Open Sans Semibold'
+}
+.v-navigation-drawer > .v-list .v-list__tile--active .v-list__tile__title{
+  color: darkorange !important;
+}
+.navigation-color{
+  color: darkorange;
+}

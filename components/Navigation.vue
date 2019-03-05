@@ -9,17 +9,18 @@
     >
       <v-img
         class="ma-5 hidden-md-and-down"
-        max-width="250px"
+        max-width="200px"
         :src="require('~/assets/images/la-cupula-logo.png')"
       />
       <v-divider />
-      <v-list>
+      <v-list class="mt-2 ml-2">
         <v-list-tile
           v-for="(item, i) in menu"
           :key="i"
           :to="item.to"
           router
           exact
+          class="mt-1"
         >
           <v-list-tile-action>
             <v-img
@@ -69,12 +70,6 @@
           clipped: false,
           // sets if the drawer is CSS positioned as 'fixed'
           fixed: false
-        },
-        toolbar: {
-          //
-          fixed: true,
-          // sets if the toolbar contents is leaving space for drawer (false) or not (true)
-          clippedLeft: false
         },
       }
     }
