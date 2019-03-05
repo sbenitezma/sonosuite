@@ -22,6 +22,8 @@ export const state = () => ({
     }
   ],
   catalog: [],
+  player: 'false',
+  playSong: {},
   locales: ['en', 'es'],
   locale: 'en'
 })
@@ -49,6 +51,18 @@ export const mutations = {
   //     state.locale = locale
   //   }
   // },
+  setPlayer (state, player) {
+    state.player = player
+  },
+  setPlaySong(state, song){
+    let tmpSong = state.catalog.songs.filter(song => song.active === 'true')
+    if(tmpSong.length > 0){
+      state.catalog.songs[tmpSong[0].id-1].active = 'false'
+    }
+    state.catalog.songs[song.id-1].active = 'true'
+    let playerSong = state.catalog.songs.filter(tmp => tmp.id === song.id)
+    state.playSong = playerSong[0]
+  }
 }
 /**
  * API Calls and Promise actions

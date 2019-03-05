@@ -23,13 +23,14 @@
         >
           <v-list-tile-action>
             <v-img
+              class="deep-orange--text navigation-color"
               :src="require('~/assets/icons/icon-menu-'+item.icon+'.svg')"
               max-width="24px"
             />
 
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title class="navigation-font" v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

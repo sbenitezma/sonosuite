@@ -15,11 +15,11 @@
             :key="item.name"
           >
             <div v-if="item.name ==='title'">
-              <h3>{{item.value}}</h3>
+              <h3 class="box-title">{{item.value}}</h3>
             </div>
             <div v-else>
-              <span>{{item.name}}</span>
-              <span>{{item.value}}</span>
+              <span class="box-subtitle">{{item.name}}</span>
+              <span class="box-subtitle">{{item.value}}</span>
             </div>
           </v-flex>
         </v-card-title>
