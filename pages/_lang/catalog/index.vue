@@ -10,7 +10,7 @@
         />
       </v-flex>
       <v-flex md6 xs12 class="mb-4">
-        <Cover :item="catalog.album" />
+        <Item :item="catalog.album" />
       </v-flex>
       <v-flex md2></v-flex>
       <v-flex md3 xs12>
@@ -37,7 +37,7 @@
 
 <script>
   import {mapState} from 'vuex'
-  import Cover from '~/components/Cover.vue'
+  import Item from '~/components/Item.vue'
   import DetailList from '~/components/DetailList.vue'
   import OrderedList from '~/components/OrderedList.vue'
   import BrandCard from '~/components/BrandCard.vue'
@@ -64,7 +64,7 @@
     },
     components: {
       MusicNav,
-      Cover,
+      Item,
       DetailList,
       OrderedList,
       BrandCard,

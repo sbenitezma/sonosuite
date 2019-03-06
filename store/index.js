@@ -54,6 +54,11 @@ export const mutations = {
   setPlayer (state, player) {
     state.player = player
   },
+  /**
+   * Set current song to play (In songs list and display music navbar)
+   * @param state
+   * @param song
+   */
   setPlaySong(state, song){
     let tmpSong = state.catalog.songs.filter(song => song.active === 'true')
     if(tmpSong.length > 0){

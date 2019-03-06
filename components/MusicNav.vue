@@ -42,7 +42,7 @@
         max-width="20px"
         max-height="20px"
         aspect-ratio="1"
-        :src="require('~/assets/icons/icon-player-shuffle.svg')"
+        :src="require('~/assets/icons/icons-bottom-player/icon-player-shuffle.svg')"
       />
     </v-flex>
 
@@ -54,7 +54,7 @@
         max-height="20px"
         width="20px"
         height="20px"
-        :src="require('~/assets/icons/icon-player-prev.svg')"
+        :src="require('~/assets/icons/icons-bottom-player/icon-player-prev.svg')"
       />
     </v-flex>
 
@@ -65,7 +65,7 @@
         max-height="40px"
         width="40px"
         height="40px"
-        :src="require('~/assets/icons/icon-player-play.svg')"
+        :src="require('~/assets/icons/icons-bottom-player/icon-player-play.svg')"
       />
     </v-flex>
     <v-flex shrink md1 class="mt-3 hidden-sm-and-down">
@@ -75,7 +75,7 @@
         max-height="20px"
         width="20px"
         height="20px"
-        :src="require('~/assets/icons/icon-player-next.svg')"
+        :src="require('~/assets/icons/icons-bottom-player/icon-player-next.svg')"
       />
     </v-flex>
     <v-flex shrink md2 class="mt-3 hidden-sm-and-down">
@@ -85,7 +85,7 @@
         max-height="20px"
         width="20px"
         height="20px"
-        :src="require('~/assets/icons/icon-player-repeat.svg')"
+        :src="require('~/assets/icons/icons-bottom-player/icon-player-repeat.svg')"
       />
     </v-flex>
     <v-flex class="hidden-sm-and-down" grow pa-1 />

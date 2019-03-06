@@ -1,6 +1,14 @@
 # PLUGINS
 
-**This directory is not required, you can delete it if you don't want to use it.**
+This directory contains all generic plugins ready to use on application.
+
+Main plugins ready to use are:
+- axios: Promise based HTTP client for the browser and nodejs. Mainly used for API Rest calls.
+- filters: Vuejs Filters like hostname
+- i18n: Language translation Plugin
+- vuetify: Semantic development framework for Vue.js built with material design
+
+##
 
 This directory contains Javascript plugins that you want to run before mounting the root Vue.js application.
 
