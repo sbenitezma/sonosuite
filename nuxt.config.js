@@ -63,6 +63,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    babel: {
+      presets: ['es2015', 'stage-2'],
+      plugins: ["transform-vue-jsx", "transform-runtime", "transform-object-rest-spread"],
+    },
     transpile: ['vuetify/lib'],
     vendor: ['axios', 'vue-i18n'],
     plugins: [new VuetifyLoaderPlugin()],
@@ -74,14 +78,19 @@ module.exports = {
     /**
      * Run ESLint on save
      */
-    extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.push(
+          {
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/
+          },{
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /(node_modules)/
+          })
       }
     }
   }
